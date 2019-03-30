@@ -1,0 +1,31 @@
+git config --global http.proxy http://761405:pwd@proxy.cognizant.com:6050  
+git config --global user.name "Shoiab Akhtar"
+git config --global user.email "shoiab.akhtar@cognizant.com"
+
+Create a new repository
+git clone https://code.cognizant.com/408962/SkillPortal.git
+cd SkillPortal
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Existing folder
+cd existing_folder
+git init
+git remote add origin https://code.cognizant.com/408962/SkillPortal.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Existing Git repository
+cd existing_repo
+git remote add origin https://code.cognizant.com/408962/SkillPortal.git
+git push -u origin --all
+git push -u origin --tags
+
+
+Fatal Error
+-------
+git pull origin master
+git pull origin branchname --allow-unrelated-histories
